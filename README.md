@@ -77,27 +77,75 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+```
+org 100h
 
+MOV AX, 04456H
+MOV BX, 00333H
+ADD AX, BX
+MOV [5000H], AX
 
+MOV AX, 0F345H
+MOV CX, 2222H
+SUB AX, CX
+MOV [5002H], AX
 
-## Output  
- 
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+MOV AX, 01234H
+MOV BX, 09H
+MUL BX
+MOV [5004H], AX
 
+MOV AX, 0FFFFH
+MOV CX, 03H
+DIV CX
+MOV [5006H], AX
 
-## Division alp 
+ret
+```
+## Output
 
-## Output  
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/367f09ba-8f05-46ed-b05d-bc9aa53b7a0c" />
+
+## Programs for logical operations
+```
+org 100h
+
+MOV AX, 4456H
+MOV BX, 0333H
+AND AX, BX
+MOV [5000H], AX
+
+MOV AX, 0F345H
+MOV CX, 2222H
+OR AX, CX
+MOV [5002H], AX
+
+MOV AX, 1234H
+NOT AX
+MOV [5004H], AX
+
+MOV AX, 0FFFFH
+MOV BX, 0003H
+AND AX, BX
+NOT AX
+MOV [5006H], AX
+
+MOV AX, 00F0H
+MOV CX, 0003H
+OR AX, CX
+NOT AX
+MOV [5008H], AX
+
+RET
+```
+## Output
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/2ed31bf3-5062-45af-9e13-f4456a662c85" />
+
 
 
 ## Result :
  
-
+The execution of arithmetic and logical operations is completed
 
 
 
