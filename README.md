@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : Anushmalika R
+Roll no : 212224230020
+Date of experiment : 31/01/26
 
 
 
